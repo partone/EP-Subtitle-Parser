@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Cool Easy Polish Subtitle Parser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+    <style>
+        h2, #submit { 
+            font-family: "Ewert", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 50px
+    }
+
+    * {
+        text-align: center;
+    }
+    </style>
+</head>
+<body onload="init()">
+    <h2>Eric's Cool Easy Polish Subtitle Parser</h2>
+    
+    <input type="file" id="fileInput" name="file"><br><br>
+    <input type="number" id="numberInput" placeholder="" style="width: 30px" value="23">
+    <br>Average number of characters per line<br>
+    May be smaller or larger depending on the text
+    <br>You can play around but I recommend somewhere between 22 and 26 for Shorts
+    <br><br>
+    <button id="submit" onclick="handleData()">Submit</button>
+</body>
+<script src ="script.js"></script>
+</html>
