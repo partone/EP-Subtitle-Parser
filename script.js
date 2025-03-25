@@ -28,7 +28,6 @@ function handleData() {
       try {
         longestText = Math.max(polishText.length, englishText.length)
         numberOfParts = Math.ceil(longestText / maxChars);
-        throw("Ouch!")
         shortSplitLines[i] = splitIntoNParts(polishText, numberOfParts)
         shortSplitLines[i + 1] = splitIntoNParts(englishText, numberOfParts)
       } catch(err) {
